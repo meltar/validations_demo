@@ -1,7 +1,7 @@
 <%= form_for(@halloweenpet) do |f| %>
   <% if @halloweenpet.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@halloweenpet.errors.count, "error") %> prohibited this halloweenpet from being saved:</h2>
+      <h2><%= pluralize(@halloweenpet.errors.count, "error") %> prohibited this Halloween Pet from being saved:</h2>
 
       <ul>
       <% @halloweenpet.errors.full_messages.each do |message| %>

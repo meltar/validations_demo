@@ -28,7 +28,7 @@ class HalloweenpetsController < ApplicationController
 
     respond_to do |format|
       if @halloweenpet.save
-        format.html { redirect_to @halloweenpet, notice: 'Halloweenpet was successfully created.' }
+        format.html { redirect_to @halloweenpet, notice: 'Halloween Pet was successfully created.' }
         format.json { render :show, status: :created, location: @halloweenpet }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class HalloweenpetsController < ApplicationController
   def update
     respond_to do |format|
       if @halloweenpet.update(halloweenpet_params)
-        format.html { redirect_to @halloweenpet, notice: 'Halloweenpet was successfully updated.' }
+        format.html { redirect_to @halloweenpet, notice: 'Halloween Pet was successfully updated.' }
         format.json { render :show, status: :ok, location: @halloweenpet }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class HalloweenpetsController < ApplicationController
   def destroy
     @halloweenpet.destroy
     respond_to do |format|
-      format.html { redirect_to halloweenpets_url, notice: 'Halloweenpet was successfully destroyed.' }
+      format.html { redirect_to halloweenpets_url, notice: 'Halloween Pet was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
