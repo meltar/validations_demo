@@ -17,7 +17,7 @@
         <td><%= halloweenpet.name %></td>
         <td><%= halloweenpet.costume %></td>
         <td><%= halloweenpet.description %></td>
-        <td><%= halloweenpet.picture %></td>
+				<td><%= image_tag(halloweenpet.picture_url, :width => 300) if halloweenpet.picture.present? %></td>
         <td><%= link_to 'Show', halloweenpet %></td>
         <td><%= link_to 'Edit', edit_halloweenpet_path(halloweenpet) %></td>
         <td><%= link_to 'Destroy', halloweenpet, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -17,7 +17,7 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= @halloweenpet.picture %>
+	<%= image_tag(@halloweenpet.picture_url, :width => 600) if @halloweenpet.picture.present? %>
 </p>
 
 <%= link_to 'Edit', edit_halloweenpet_path(@halloweenpet) %> |
