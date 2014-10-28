@@ -1,0 +1,31 @@
+<h1>Listing halloweenpets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Costume</th>
+      <th>Description</th>
+      <th>Picture</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @halloweenpets.each do |halloweenpet| %>
+      <tr>
+        <td><%= halloweenpet.name %></td>
+        <td><%= halloweenpet.costume %></td>
+        <td><%= halloweenpet.description %></td>
+        <td><%= halloweenpet.picture %></td>
+        <td><%= link_to 'Show', halloweenpet %></td>
+        <td><%= link_to 'Edit', edit_halloweenpet_path(halloweenpet) %></td>
+        <td><%= link_to 'Destroy', halloweenpet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Halloweenpet', new_halloweenpet_path %>

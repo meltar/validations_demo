@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @halloweenpet.name %>
+</p>
+
+<p>
+  <strong>Costume:</strong>
+  <%= @halloweenpet.costume %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @halloweenpet.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @halloweenpet.picture %>
+</p>
+
+<%= link_to 'Edit', edit_halloweenpet_path(@halloweenpet) %> |
+<%= link_to 'Back', halloweenpets_path %>

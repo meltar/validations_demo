@@ -1,0 +1,33 @@
+<%= form_for(@halloweenpet) do |f| %>
+  <% if @halloweenpet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@halloweenpet.errors.count, "error") %> prohibited this halloweenpet from being saved:</h2>
+
+      <ul>
+      <% @halloweenpet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :costume %><br>
+    <%= f.text_field :costume %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :picture %><br>
+    <%= f.text_field :picture %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
