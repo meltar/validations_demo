@@ -1,4 +1,5 @@
-##Halloween themed Rails validations demo aka SPOOKY PETS
+##Halloween themed Rails validations demo aka  
+##:ghost::ghost::ghost: SPOOKY PETS :ghost::ghost::ghost:
 
 ###To get this app up and running, run these commands in console:
 
