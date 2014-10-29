@@ -69,6 +69,6 @@ class HalloweenpetsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def halloweenpet_params
-      params.require(:halloweenpet).permit(:name, :costume, :description, :picture)
+      params.require(:halloweenpet).permit(:name, :costume, :description, :picture, :age, :email, :weight, :gender)
     end
 end
