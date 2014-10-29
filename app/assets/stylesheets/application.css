@@ -16,5 +16,29 @@
 
 body { padding-top: 100px; }
 footer { margin-top: 100px; }
-table, td, th { vertical-align: middle; border: none; }
+table, td, th {
+	vertical-align: middle;
+	border: none;
+	padding: 20px;
+}
 th { border-bottom: 1px solid #DDD; }
+
+body {
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+p {
+	font-size: 20px;
+}
+
+td {
+	font-size: 20px;
+}
