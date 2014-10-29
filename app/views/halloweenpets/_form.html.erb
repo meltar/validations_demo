@@ -13,11 +13,12 @@
 
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, required: true %>
   </div>
   <div class="field">
     <%= f.label :costume %><br>
-    <%= f.text_field :costume %>
+		<%= f.text_field :costume, type: 'password',
+															 required: true %>
   </div>
   <div class="field">
     <%= f.label :description %><br>
@@ -25,15 +26,19 @@
   </div>
   <div class="field">
     <%= f.label :picture %><br>
-    <%= f.file_field :picture %>
+    <%= f.file_field :picture, required: true %>
   </div>
   <div class="field">
     <%= f.label :email %><br>
-    <%= f.text_area :email %>
+		<%= f.text_area :email, required: true,
+														placeholder: "Enter a valid email address" %>
   </div>
   <div class="field">
     <%= f.label :age %><br>
-    <%= f.text_area :age %>
+		<%= f.text_field :age, type: 'number',
+													 min: '0',
+													 max: '100',
+													 required: true %>
   </div>
   <div class="field">
     <%= f.label :weight, 'Weight in pounds' %><br>
