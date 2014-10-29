@@ -10,6 +10,7 @@ class HalloweenpetsController < ApplicationController
   # GET /halloweenpets/1
   # GET /halloweenpets/1.json
   def show
+		flash[:notice] = 'This submission is valid!' if @halloweenpet.valid?
   end
 
   # GET /halloweenpets/new
